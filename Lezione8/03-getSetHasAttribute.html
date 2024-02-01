@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Lista spesa</h1>
+    <ul id="listaSpesa">
+        <li id="uno">Nutella</li>
+        <li id="due">Biscotti</li>
+        <li id="tre">Acqua</li>
+        <li id="quattro">Birra</li>
+        <li id="cinque">Orate</li>
+        <li id="sei">Insalata</li>
+    </ul>
+
+    <div class="dimDiv">
+
+        <h2 class="txtRed">Lista Libri</h2>
+
+        <ul id="listaLibri">
+            <li class="txtRed">Java8 ed Eclipse</li>
+            <li class="txtRed">il mestiere di vivere</li>
+            <li class="txtRed">così parlò Java8</li>
+            <li class="txtRed">I dolori del giovane programmatore</li>
+            <li class="txtRed">una vita come tante</li>
+            <li class="txtRed">delitto e Java8</li>
+            <li class="txtRed">viaggio al centro di javascript</li>
+        </ul>
+
+    </div>
+
+    <div>
+        <h2 id="listaFilm">Lista Film</h2>
+            <ul>
+                <li>Harry Potter il prigioniero di javascript</li>
+                <li>Java returns</li>
+                <li>Avengers Vs Eclipse</li>
+                <li>J per JSON</li>
+            </ul>
+    </div>
+    
+<div class="container">
+    <h2>Link alla pagina del corso</h2>
+    <a href=""></a>
+</div>
+
+<div class="container-fluid">
+    <h2>Link github</h2>
+    <a href="https://www.github.com" class="txtRed bgGreen"></a>
+</div>
+
+
+
+
+    <div id="lampadina" class="dimLampadina"></div>
+    <script>
+
+        let liFilm = document.querySelectorAll("#listaFilm li");
+        liFilm.forEach(Li => {
+            Li.setAttribute("class", "txtBlue");
+        })
+
+        let a = document.querySelector(".container");
+        a.setAttribute("href", "https://www.immaginazioneelavoro.it");
+        a.textContent = "Immaginazione e lavoro";
+
+        let aGit = document.querySelector(".container-fluid a");
+        let link = aGit.getAttribute("href");
+        console.log(link);
+
+        let classAGit = aGit.getAttribute("class");
+        console.log(classAGit);
+
+        console.log(aGit.href);
+
+        if(aGit.hasAttribute(href)){
+            console.log("Ok, il link è associato");
+        }else{
+            console.log("Non hai associato nessun link");
+        }
+
+
+
+
+
+        let lampadina = document.querySelector("#lampadina");
+        lampadina.onclick = function(){
+            if(this.classList.contains("bgYellow"){
+                this.classList.remove("bgYellow");
+            }else{
+                this.classList.add("bgYellow")
+            }
+        }
+
+    </script>
+
+</body>
+</html>

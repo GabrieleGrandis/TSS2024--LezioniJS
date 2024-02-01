@@ -1,0 +1,37 @@
+Riordinare un'Array [2 1 18 22 0 42 8];
+trova il più grande; 
+pari o dispari;
+
+estrazione di n numeri da 1 a 100;
+estrazione di n numeri tra 25 e 50;
+
+domande colloquio
+
+che cos'è una classe?
+che cos'è un oggetto?
+che cos'è Java? (a cosa serve/ proprietà)
+che cos'è il metodo main e a cosa serve?
+i modificatori di accesso (public(getters and setters)/private/protected/extends)
+che cos'è garbage collector?
+cos'è la java virtual machine?
+qual è la differenza tra un array ed un arraylist?
+quanti e quali sono i tipi primitivi?
+che cos'è la parola chiave static?
+scrivere un metodo main a penna
+scrivere un ciclo for a mano
+a cosa serve un if?
+Fare la stessa cosa da java a javascript o viceversa
+tipizzazione del linguaggio(js debolmente tipizzato, java fortemente tipizzato)
+a cosa servono le funzioni in js
+quanti e quali sono i tipi number in js (float, int, ecc...)
+che tipo di linguaggio è javascript?(paradigmi)
+a cosa servono le funzioni in js?
+quanti e quali sono i modi per gestire un evento? ()
+come definire un array in javascript e come si definisce in java?
+definisci un oggetto
+
+
+
+
+
+

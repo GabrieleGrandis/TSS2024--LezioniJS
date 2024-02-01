@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Lista spesa</h1>
+    <ul id="listaSpesa">
+        <li id="uno">Nutella</li>
+        <li id="due">Biscotti</li>
+        <li id="tre">Acqua</li>
+        <li id="quattro">Birra</li>
+        <li id="cinque">Orate</li>
+        <li id="sei">Insalata</li>
+    </ul>
+
+    <div class="dimDiv">
+
+        <h2 class="txtRed">Lista Libri</h2>
+
+        <ul id="listaLibri">
+            <li class="txtRed">Java8 ed Eclipse</li>
+            <li class="txtRed">il mestiere di vivere</li>
+            <li class="txtRed">così parlò Java8</li>
+            <li class="txtRed">I dolori del giovane programmatore</li>
+            <li class="txtRed">una vita come tante</li>
+            <li class="txtRed">delitto e Java8</li>
+            <li class="txtRed">viaggio al centro di javascript</li>
+        </ul>
+
+    </div>
+
+    <div>
+        <h2 id="listaFilm">Lista Film</h2>
+            <ul>
+                <li>Harry Potter il prigioniero di javascript</li>
+                <li>Java returns</li>
+                <li>Avengers Vs Eclipse</li>
+                <li>J per JSON</li>
+            </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        
+        let lis = document.querySelector("li"); //NODELIST  
+        console.log(lis);
+
+        //voglio leggere i testi dei singoli li
+        for(let i  = 0; i < lis.length; i++){
+            console.log(lis[i].textContent);
+        }
+
+lis.forEach(Li => {
+    console.log(li.t);
+});
+
+let liLibri = document.querySelector("#listaLibri li");
+
+console.log(liLibri);
+liLibri.forEach(Li =>{
+    console.log(Li.textContent);
+});
+
+
+console.log(document.querySelector("ul#listaFilm").innerHTML);
+
+    </script>
+
+
+</body>
+</html>
